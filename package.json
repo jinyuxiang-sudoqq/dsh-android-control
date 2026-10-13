@@ -1,0 +1,31 @@
+{
+  "name": "dsh-android-control",
+  "version": "0.1.0",
+  "description": "Control an Android phone from DeepSeek Harness over ADB: screenshot returned as a real image, tap, swipe, type, key events, app launch/stop, and a shell escape hatch.",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "adb.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "android",
+    "adb",
+    "automation"
+  ]
+}

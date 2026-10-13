@@ -1,0 +1,8 @@
+# 测试与运行残留
+_bigreq.json
+_probe.mjs
+*.log
+*.tmp
+
+# 本地路径相关（uninstall.ps1 含本机绝对路径，按需保留）
+node_modules/

@@ -1,0 +1,12 @@
+# dsh-android-control 的默认配置层（bundle patch）。
+#
+# 这里只负责把插件挂上；adbd 的位置由插件自己解析（环境变量 ANDROID_CONTROL_ADB
+# → 常见安装路径 → PATH 上的 adb），所以绝大多数情况下不需要改任何配置。
+#
+# 需要显式指定 adb 时，在 profile 的 cordis.patch.yml 里覆盖 config：
+#   - id: android-control
+#     config:
+#       adbPath: 'D:\android\platform-tools\adb.exe'
+- insert:
+    - id: android-control
+      name: dsh-android-control
